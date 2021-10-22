@@ -1,0 +1,182 @@
+body {
+  background-color: #f2ecda;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+h2 {
+  text-align: center;
+  font-size: 42px;
+  font-style: normal;
+  font-family: monospace;
+}
+
+#hrCookies {
+  color: black;
+  background-color: black;
+  height: 2px;
+  margin-top: 35px;
+}
+
+#headerTitle {
+  text-align: center;
+  font-size: 95px;
+  font-style: normal;
+  font-family: monospace;
+}
+
+#hrTitle {
+  margin-top: 0px;
+  margin-bottom: 8px;
+  height: 4px;
+  color: grey;
+  background-color: grey;
+}
+
+#randomNumPar {
+  text-align: center;
+  font-size: 99px;
+  margin: 0px;
+  width: 130px;
+  height: 100px;
+  padding-bottom: 7px;
+  font-family: monospace;
+}
+
+#cookieAmount {
+  text-align: center;
+  font-size: 99px;
+  margin: 0px;
+  width: 130px;
+  height: 100px;
+  padding-bottom: 7px;
+  font-family: monospace;
+}
+
+#labelFlour {
+  margin-top: 5px;
+  font-family: monospace;
+  margin-bottom: 2px;
+}
+
+#labelMilk {
+  margin-top: 5px;
+  font-family: monospace;
+  margin-bottom: 2px;
+}
+
+#labelEgg {
+  margin-top: 5px;
+  font-family: monospace;
+  margin-bottom: 2px;
+}
+
+#inputMilk {
+  margin-top: 15px;
+}
+
+#inputFlour {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#inputIngr {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.titleBox {
+  border-color: black;
+  border-style: solid;
+  border-width: thick;
+  padding: 6px;
+  background-color: #e1dbcb;
+}
+
+.buttonJS {
+  font-size: 30px;
+  border-color: black;
+  border-style: solid;
+  border-width: thick;
+  padding: 6px;
+  text-shadow: 2px;
+  background-color: #e1dbcb;
+}
+
+.buttonCookie {
+  font-size: 30px;
+  border-color: black;
+  border-style: solid;
+  border-width: thick;
+  padding: 6px;
+  text-shadow: 2px;
+  background-color: #e1dbcb;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.randomButtonJS {
+  font-size: 30px;
+  border-color: black;
+  border-style: solid;
+  border-width: thick;
+  padding: 6px;
+  text-shadow: 2px;
+  border-radius: 15px;
+  background-color: #e1dbcb;
+}
+
+.divButtons {
+  text-align: center;
+}
+
+.divRandomNum {
+  margin-top: 35px;
+  text-align: center;
+}
+
+.numBox {
+  margin: auto;
+  margin-top: 30px;
+  text-align: center;
+  border-color: black;
+  border-style: solid;
+  border-width: thick;
+  border-radius: 10px;
+  width: min-content;
+  background-color: #e1dbcb;
+}
+
+.alert {
+  position: fixed;
+  border-style: solid;
+  font-family: monospace;
+  padding: 15px;
+  background-color: white;
+  color: black;
+  margin-bottom: 15px;
+  bottom: 0;
+  animation: fadein 2s;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: black;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: red;
+}
+
+.bakeCake {
+  text-align: center;
+}

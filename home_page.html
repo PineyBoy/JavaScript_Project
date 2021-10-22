@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Home Page</title>
+    <link rel="stylesheet" href="homeStyle.css">
+  </head>
+  <body>
+    <script>
+      alert("Welcome To My Test Page!");
+    </script>
+
+    <div class="titleBox">
+      <h1 id="headerTitle">HelloWorld!</h1>
+    </div>
+
+      <hr id="hrTitle">
+    <div class="divButtons">
+      <button class="buttonJS" type="button" onclick='document.getElementById("headerTitle").innerHTML = "HelloWorld!"'>HelloWorld!</button>
+      <button class="buttonJS" type="button" onclick='document.getElementById("headerTitle").innerHTML = "GoodbyeWorld!"'>GoodbyeWorld!</button>
+      <button class="buttonJS" type="button" onclick="namePrompt()">HelloName!</button>
+    </div>
+
+    <div class="divRandomNum">
+      <button class="randomButtonJS" type="button" onclick='document.getElementById("randomNumPar").innerHTML = getRndInteger(0,10)'>Random Number</button>
+      <div class="numBox">
+        <p id="randomNumPar"></p>
+
+        <script>
+          function getRndInteger(min, max) {
+          return Math.floor(Math.random() * 10) + 1;
+          }
+        </script>
+      </div>
+    </div>
+
+    <hr id="hrCookies">
+
+    <h2>Make Some Cookies!</h2>
+
+    <div class="bakeCake">
+      <form id="inputIngr">
+        <label id="labelEgg" for="labelEgg"><strong>Eggs:</strong></label>
+        <input type="text" id="inputEgg" name="eggs"><br>
+      </form>
+
+      <button class="buttonCookie" type="button" onclick='calc()'>Calculate</button>
+
+      <div class="numBox">
+        <p id="cookieAmount"></p>
+      </div>
+    </div>
+
+    <hr id="hrCookies">
+
+    <script>
+      function calc() {
+        let text;
+        let iv1 = document.querySelector("#inputEgg").value;
+        if (iv1 < 2) {
+          document.getElementById("cookieAmount").innerHTML = "X"
+        }
+
+        else {
+          if (iv1 >= 2) {
+            let amountCookies = (iv1 / 2)
+            document.getElementById("cookieAmount").innerHTML = amountCookies
+          }
+        }
+      }
+    </script>
+
+    <script>
+      function namePrompt() {
+        let text;
+        let person = prompt("Please enter your name:", "Jeff");
+        if (person == null || person == "") {
+          text = "HelloUnknown!";
+        } else {
+          text = "Hello" + person + "!";
+        }
+        document.getElementById("headerTitle").innerHTML = text;
+      }
+      </script>
+
+    <div class="alert">
+      <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+      <strong>Note: </strong> This Webpage Is Just a Test.
+    </div>
+
+  </body>
+</html>
